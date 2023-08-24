@@ -1,3 +1,9 @@
+/*Vector.h
+* Why buffer? We need this whenever we are uncertain
+* of the size is. Will be used normally for strings
+* in our compiler.
+*/
+
 #ifndef VECTOR_H
 #define VECTOR_H
 
@@ -55,7 +61,7 @@ void vector_pop_last_peek(struct vector* vector);
 
 /**
  * Peeks into the vector of pointers, returning the pointer value its self
- * 
+ *
  * Use this function instead of vector_peek if this is a vector of pointers
  */
 void* vector_peek_ptr(struct vector* vector);
@@ -73,7 +79,7 @@ void* vector_back_ptr(struct vector* vector);
 void* vector_back_ptr_or_null(struct vector* vector);
 
 /**
- * Returns the vector data as a char pointer 
+ * Returns the vector data as a char pointer
  */
 const char* vector_string(struct vector* vec);
 

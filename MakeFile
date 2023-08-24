@@ -1,4 +1,4 @@
-OBJECTS= ./build/compiler.o ./build/cprocess.o
+OBJECTS= ./build/compiler.o ./build/cprocess.o ./build/helpers/buffer.o ./build/helpers/vector.o
 INCLUDE= -I./
 
 all: ${OBJECTS}
@@ -10,10 +10,10 @@ all: ${OBJECTS}
 ./build/cprocess.o: ./cprocess.c
 	gcc ./cprocess.c $(INCLUDE) -o ./build/cprocess.o -g -c
 
-./build/buffer.o: ./helpers/buffer.c
+./build/helpers/buffer.o: ./helpers/buffer.c
 	gcc ./helpers/buffer.c $(INCLUDE) -o ./build/helpers/buffer.o -g -c
 
-./build/vector.o: ./helpers/vector.c
+./build/helpers/vector.o: ./helpers/vector.c
 	gcc ./helpers/vector.c $(INCLUDE) -o ./build/helpers/vector.o -g -c
 
 clean:

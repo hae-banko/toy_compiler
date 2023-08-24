@@ -1,3 +1,9 @@
+/*Buffer.h
+* Why buffer? We need this whenever we are uncertain
+* of the size is. Will be used normally for strings
+* in our compiler.
+*/
+
 #ifndef BUFFER_H
 #define BUFFER_H
 
