@@ -10,6 +10,12 @@ all: ${OBJECTS}
 ./build/cprocess.o: ./cprocess.c
 	gcc ./cprocess.c $(INCLUDE) -o ./build/cprocess.o -g -c
 
+./build/buffer.o: ./helpers/buffer.c
+	gcc ./helpers/buffer.c $(INCLUDE) -o ./build/helpers/buffer.o -g -c
+
+./build/vector.o: ./helpers/vector.c
+	gcc ./helpers/vector.c $(INCLUDE) -o ./build/helpers/vector.o -g -c
+
 clean:
 	rm ./main
 	rm -rf $(OBJECTS)
