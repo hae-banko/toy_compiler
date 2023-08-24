@@ -1,2 +1,9 @@
-# toy_compiler
-A toy compiler. 
+# 🖥Vanko's Toy Compiler
+
+A toy compiler.
+
+## Something for the future:
+
+Do LLVM stuff 🕶
+
+## Cool references
