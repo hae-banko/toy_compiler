@@ -1,10 +1,9 @@
 OBJECTS=
-INCLUDES= -I ./
-#gcc test.c ${INCLUDES} ${OBJECTS} -g -o ./main
+INCLUDE= -I./
 
 all: ${OBJECTS}
-	gcc main.c ${INCLUDES} ${OBJECTS} -g -o ./main
+	gcc main.c $(INCLUDES) $(OBJECTS) -g -o ./main
 
 clean:
 	rm ./main
-	rm -rf ${OBJECTS}
+	rm -rf $(OBJECTS)
